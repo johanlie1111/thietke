@@ -127,19 +127,25 @@ nav {
   color: var(--text-color);
 }
 
-.list_item {
+.nav_item {
   color: var(--text-color);
   font-size: 16px;
   font-weight: 600;
   opacity: 0.9;
 }
 
-.list_item:hover {
+.nav_item a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav_item:hover {
   cursor: pointer;
   opacity: 1;
 }
 
-.list_item_container {
+.nav_item_container {
   position: relative;
   height: 100%;
   opacity: 1;
@@ -147,15 +153,15 @@ nav {
 
 /* navhover list */
 
-.list_item_container:hover .list_item_select--formen {
+.nav_item_container:hover .nav_item_select--formen {
   display: flex;
 }
 
-.list_item_container:hover .list_item_select--forwomen {
+.nav_item_container:hover .nav_item_select--forwomen {
   display: flex;
 }
 
-.list_item_container::after {
+.nav_item_container::after {
   content: "";
   display: block;
   width: 100%;
@@ -166,7 +172,7 @@ nav {
 }
 
 /* list_item_select */
-.list_item_select--formen {
+.nav_item_select--formen {
   position: absolute;
   width: 600px;
   display: flex;
@@ -180,7 +186,7 @@ nav {
   z-index: 11;
 }
 
-.list_item_select--forwomen {
+.nav_item_select--forwomen {
   position: absolute;
   width: 600px;
   display: flex;
@@ -245,12 +251,18 @@ nav {
   height: 100%;
 }
 
+
 .arrow--left {
   font-size: 35px;
   color: var(--select-color);
   position: absolute;
   top: 50%;
   left: 20px;
+}
+
+.arrow--left:hover {
+  cursor: pointer;
+  z-index: 1;
 }
 
 .arrow--right {
@@ -263,7 +275,7 @@ nav {
 
 /* body */
 
-.service {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,8 +284,8 @@ nav {
   margin: auto;
 }
 
-/* container1 */
-.container1 {
+/* container */
+.service {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -281,23 +293,23 @@ nav {
   margin-top: 35px;
 }
 
-.pic_service1 {
+.pic_service_first {
   width: 750px;
   height: 500px;
 }
 
-.pic_service1 img {
+.pic_service_first img {
   width: 100%;
   height: 100%;
 }
 
-.pic_service2 img {
+.pic_service_second img {
   width: 360px;
   height: 100%;
   margin-bottom: 20px;
 }
 
-.pic_service2 {
+.pic_service_second {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -332,20 +344,20 @@ p {
   position: relative;
 }
 
-.container2 {
+.container2:hover {
   cursor: pointer;
 }
 
-.service3 {
+.service2 {
   width: 320px;
   flex: 1;
 }
-.service3 img {
+.service2 img {
   width: 100%;
   height: 100%;
 }
 
-.service_arrow {
+.service2_arrow {
   font-size: 16px;
   color: #333333;
   background-color: rgba(255, 255, 255, 0.8);
@@ -354,22 +366,22 @@ p {
   border-radius: 50%;
 }
 
-.service_arrow:hover {
+.service2_arrow:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-.service_arrow i {
+.service2_arrow i {
   margin-top: 8px;
 }
 
-.service3_arrow_left {
+.service2_arrow_left {
   position: absolute;
   left: 10px;
   text-align: center;
 }
 
-.service3_arrow_right {
+.service2_arrow_right {
   position: absolute;
   right: 10px;
   text-align: center;
@@ -391,25 +403,25 @@ h2 {
   font-size: 25px;
 }
 
-.service4_item {
+.container3_item {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 
-.service4_item :hover {
+.container3_item :hover {
   cursor: pointer;
 }
 
-.pic_service4_left {
+.pic_service3_left {
   width: 360px;
 }
 
-.pic_service4_left img {
+.pic_service3_left img {
   width: 100%;
 }
 
-.pic_service4_left img:nth-child(1) {
+.pic_service3_left img:nth-child(1) {
   margin-bottom: 17px;
 }
 /* line */
@@ -427,7 +439,7 @@ h2 {
   position: relative;
 }
 
-.service5_item {
+.container4_item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -435,12 +447,16 @@ h2 {
   margin-top: 50px;
 }
 
-.pic_service5 {
+.service4 {
   width: 360px;
   position: relative;
 }
 
-.pic_service5:hover .pic_service5_item_detail {
+.service4:hover {
+  cursor: pointer;
+}
+
+.service4:hover .service4_item_detail {
   display: flex;
   animation: detail ease-out 0.3s;
 }
@@ -455,27 +471,27 @@ h2 {
   }
 }
 
-.pic_service5:hover {
+.service4:hover {
   box-shadow: 0px 0px 9px 3px rgba(66, 33, 11, 0.16);
 }
 
-.pic_service5 img {
+.service4 img {
   width: 100%;
   height: 100%;
 }
 
-.pic_service5_item {
+.service4_item {
   text-align: center;
   margin-top: 10px;
   font-weight: 500;
   font-size: 15px;
 }
 
-.service_arrow {
-  position: absolute;
+.service4_arrow {
+
 }
 
-.pic_service5_item_detail {
+.service4_item_detail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,7 +504,7 @@ h2 {
   display: none;
 }
 
-.pic_service5_item_detail--heart i {
+.service4_item_detail--heart i {
   width: 32px;
   height: 32px;
   margin: auto;
@@ -498,7 +514,7 @@ h2 {
   position: relative;
 }
 
-.pic_service5_item_detail--heart::before {
+.service4_item_detail--heart::before {
   content: "";
   position: absolute;
   width: 32px;
@@ -508,12 +524,12 @@ h2 {
   overflow: hidden;
 }
 
-.pic_service5_item_detail--heart:hover {
+.service4_item_detail--heart:hover {
   cursor: pointer;
   color: var(--text-color);
 }
 
-.pic_service5_item_detail--shop i {
+.service4_item_detail--shop i {
   width: 32px;
   height: 32px;
   margin: auto;
@@ -524,12 +540,12 @@ h2 {
   z-index: 1;
 }
 
-.pic_service5_item_detail--shop:hover {
+.service4_item_detail--shop:hover {
   cursor: pointer;
   color: var(--text-color);
 }
 
-.pic_service5_item_detail--shop::before {
+.service4_item_detail--shop::before {
   content: "";
   position: absolute;
   width: 32px;
@@ -539,7 +555,7 @@ h2 {
   overflow: hidden;
 }
 
-.pic_service5_item_detail--plus i {
+.service4_item_detail--plus i {
   width: 32px;
   height: 32px;
   margin: auto;
@@ -550,12 +566,12 @@ h2 {
   z-index: 1;
 }
 
-.pic_service5_item_detail--plus:hover {
+.service4_item_detail--plus:hover {
   cursor: pointer;
   color: var(--text-color);
 }
 
-.pic_service5_item_detail--plus::before {
+.service4_item_detail--plus::before {
   content: "";
   position: absolute;
   width: 32px;
