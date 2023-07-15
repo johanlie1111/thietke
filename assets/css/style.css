@@ -131,7 +131,6 @@ nav {
   color: var(--text-color);
   font-size: 16px;
   font-weight: 600;
-  opacity: 0.9;
 }
 
 .nav_item a {
@@ -149,6 +148,11 @@ nav {
   position: relative;
   height: 100%;
   opacity: 1;
+}
+
+.nav_item input {
+  outline: none;
+  padding-left: 3px;
 }
 
 /* navhover list */
@@ -183,7 +187,8 @@ nav {
   border-radius: 6px;
   display: none;
   animation: select linear 0.2s;
-  z-index: 11;
+  z-index: 3;
+  color: var(--text-color);
 }
 
 .nav_item_select--forwomen {
@@ -197,7 +202,8 @@ nav {
   border-radius: 6px;
   display: none;
   animation: select linear 0.2s;
-  z-index: 11;
+  z-index: 3;
+  color: var(--text-color);
 }
 
 .select_list {
@@ -243,14 +249,12 @@ nav {
 .banner {
   width: 100%;
   position: relative;
-  z-index: -1;
 }
 
 .banner img {
   width: 100%;
   height: 100%;
 }
-
 
 .arrow--left {
   font-size: 35px;
@@ -271,6 +275,11 @@ nav {
   position: absolute;
   top: 50%;
   right: 20px;
+}
+
+.arrow--right:hover {
+  cursor: pointer;
+  z-index: 1;
 }
 
 /* body */
@@ -458,17 +467,8 @@ h2 {
 
 .service4:hover .service4_item_detail {
   display: flex;
-  animation: detail ease-out 0.3s;
-}
-
-@keyframes detail {
-  from {
-    bottom: 40px;
-  }
-
-  to {
-    bottom: 71px;
-  }
+  transform: translateY(5px);
+  visibility: visible;
 }
 
 .service4:hover {
@@ -482,13 +482,18 @@ h2 {
 
 .service4_item {
   text-align: center;
-  margin-top: 10px;
+  height: 50px;
+  background-color: white;
+
   font-weight: 500;
   font-size: 15px;
-}
-
-.service4_arrow {
-
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 5px;
+  z-index: 1;
 }
 
 .service4_item_detail {
@@ -500,8 +505,39 @@ h2 {
   font-size: 20px;
   left: 33%;
   gap: 15px;
-  z-index: 1;
-  display: none;
+  visibility: hidden;
+  transform: translateY(55px);
+  transition: all linear 0.2s;
+}
+
+.service4_item_detail--heart {
+  transform: rotate(-45deg);
+  background-color: white;
+}
+
+.service4_item_detail--heart:hover {
+  transform: rotate(-45deg);
+  background-color: var(--bg-color);
+}
+
+.service4_item_detail--shop {
+  transform: rotate(-45deg);
+  background-color: white;
+}
+
+.service4_item_detail--shop:hover {
+  transform: rotate(-45deg);
+  background-color: var(--bg-color);
+}
+
+.service4_item_detail--plus {
+  transform: rotate(-45deg);
+  background-color: white;
+}
+
+.service4_item_detail--plus:hover {
+  transform: rotate(-45deg);
+  background-color: var(--bg-color);
 }
 
 .service4_item_detail--heart i {
@@ -512,16 +548,7 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
-}
-
-.service4_item_detail--heart::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  transform: rotate(-45deg);
-  overflow: hidden;
+  transform: rotate(45deg);
 }
 
 .service4_item_detail--heart:hover {
@@ -537,22 +564,12 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 1;
+  transform: rotate(45deg);
 }
 
 .service4_item_detail--shop:hover {
   cursor: pointer;
   color: var(--text-color);
-}
-
-.service4_item_detail--shop::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  transform: rotate(-45deg);
-  overflow: hidden;
 }
 
 .service4_item_detail--plus i {
@@ -563,20 +580,10 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 1;
+  transform: rotate(45deg);
 }
 
 .service4_item_detail--plus:hover {
   cursor: pointer;
   color: var(--text-color);
-}
-
-.service4_item_detail--plus::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  transform: rotate(-45deg);
-  overflow: hidden;
 }
