@@ -18,6 +18,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Antic&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -613,7 +615,6 @@ h2 {
   margin-top: 5px;
 }
 
-
 /* container6 */
 
 .container6 {
@@ -635,9 +636,7 @@ h2 {
   align-items: center;
   gap: 30px;
   margin-top: 40px;
-
 }
- 
 
 .service6_item_more {
   display: flex;
@@ -647,14 +646,13 @@ h2 {
   width: 210px;
 }
 
-.service6_item_more:nth-child(1){
+.service6_item_more:nth-child(1) {
   opacity: 0.5;
 }
 
-.service6_item_more:nth-child(3){
+.service6_item_more:nth-child(3) {
   opacity: 0.5;
 }
-
 
 .service6_item_more img {
   width: 100%;
@@ -675,4 +673,40 @@ h2 {
 
 .dot i {
   color: rgb(168, 168, 168);
+}
+
+/* container7 */
+
+.container7 {
+  margin-top: 30px;
+}
+
+.flwtittle {
+  display: flex;
+}
+
+.flwtittle h2 {
+  font-size: 16px;
+  font-family: "Antic", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+}
+
+.flwtittle a {
+  text-decoration: none;
+  color: rgb(134, 119, 119);
+  background-color: var(--bg-color);
+  height: 32px;
+  width: 220px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.flwtittle a:hover {
+  cursor: pointer;
 }
