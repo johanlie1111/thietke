@@ -678,11 +678,14 @@ h2 {
 /* container7 */
 
 .container7 {
-  margin-top: 30px;
+  margin-top: 40px;
+
 }
 
 .flwtittle {
   display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
 }
 
 .flwtittle h2 {
@@ -709,4 +712,80 @@ h2 {
 
 .flwtittle a:hover {
   cursor: pointer;
+}
+
+.service7 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service7:hover {
+  cursor: pointer;
+}
+
+.service7_left {
+  width: 390px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding-bottom: 20px;
+}
+
+.service7_left-item {
+  width: 180px;
+  height: 180px;
+}
+
+.service7_left-item img {
+  width: 100%;
+}
+
+
+.service7_middle{
+  width: 390px;
+  height: 385px;
+  padding-bottom: 20px;
+
+}
+
+.service7_middle img  {
+  width: 100%;
+  height: 100%;
+}
+
+
+.service7_right {
+  width: 390px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px  ;
+  padding-bottom: 20px;
+}
+
+.service7_right-item {
+  width: 180px;
+  height: 180px;
+}
+
+.service7_right-item img {
+  width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+}
+
+.footer_logo {
+  max-width: 90px;
+  margin: auto;
+}
+
+.footer_logo img {
+  width: 100%;
 }
