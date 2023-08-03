@@ -1,0 +1,184 @@
+:root {
+  --bg-color: #f9e0ce;
+  --text-color: #003031;
+  --select-color: #f5e6de;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  padding-top: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 1130px;
+    margin: auto;
+}
+
+.home {
+    display: flex;
+  font-size: 13px;
+  font-weight: 700;
+  gap: 5px;
+  font-family: "Rubik", sans-serif;
+  text-align: left;
+  padding: 15px 0px 15px 0px;
+}
+
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlle {
+    font-size: 21px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+
+.login p {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 5px ;
+}
+
+.email div {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.detail {
+    display: flex;
+    gap: 3px    ;
+}
+
+.detail i {
+    font-size: 5px;
+    color: red;
+    
+}
+
+.email input {
+    width: 555px;
+    height: 40px;
+    padding: 5px 0px 5px 15px;
+    font-size: 15px;
+    border: 1px solid rgb(196, 194, 194);
+    outline: none;
+    margin: 10px 0px 10px 0px;
+}
+
+/* password */
+.password div {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.detail {
+    display: flex;
+    gap: 3px    ;
+}
+
+.detail i {
+    font-size: 5px;
+    color: red;
+    
+}
+
+.password input {
+    width: 555px;
+    height: 40px;
+    padding: 5px 0px 5px 15px;
+    font-size: 15px;
+    border: 1px solid rgb(196, 194, 194);
+    outline: none;
+    margin: 10px 0px 10px 0px;
+}
+
+.login-btn button {
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(146, 133, 133);
+    outline: none;
+    border: none;
+    margin-right: 15px;
+    border-radius: 2px;
+}
+
+.login-btn button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.login-btn a {
+    color: rgb(88, 86, 86);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* forgot */
+
+.forgot {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px   ;
+    width: 100%;
+}
+
+.forgot p {
+    font-size: 14px;
+}
+
+.forgot-email {
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.forgot-email input {
+    width: 555px;
+    height: 40px;
+    padding: 5px 0px 5px 15px;
+    font-size: 15px;
+    border: 1px solid rgb(196, 194, 194);
+    outline: none;
+    margin: 10px 0px 0px 0px;
+
+}
+
+
+.forgot-btn button {
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: rgb(146, 133, 133);
+    outline: none;
+    border: none;
+    margin-right: 15px;
+    border-radius: 2px;
+   
+    
+}
+
+.forgot-btn button:hover {
+    cursor: pointer;
+}
+
