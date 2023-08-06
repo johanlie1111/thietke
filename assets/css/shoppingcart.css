@@ -117,6 +117,7 @@
     color:  #065557;
     margin: auto;
     margin-left: 10px;
+    word-wrap: break-word;
 }
 
 .cart-product-left-info p:hover {
