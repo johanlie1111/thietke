@@ -350,7 +350,7 @@ footer {
   padding-top: 10px;
 }
 
-p:nth-child(3) {
+.center p:nth-child(3) {
   font-size: 13px;
   color: rgb(136, 116, 116);
 }

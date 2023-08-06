@@ -1,0 +1,226 @@
+:root {
+  --bg-color: #f9e0ce;
+  --text-color: #003031;
+  --select-color: #f5e6de;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  padding-top: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  width: 1350px;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title i {
+  font-size: 12px;
+}
+
+.title p {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.title p a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.content-map {
+  display: flex;
+  width: 100%;
+  background-color: #2e312f;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.content-map-item {
+  display: flex;
+}
+
+.content-map-left {
+  margin-left: 10px;
+  color: whitesmoke;
+}
+
+.content-map-left i:nth-child(1) {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+.content-map-left i:nth-child(2) {
+  font-size: 30px;
+  padding: 10px;
+  color: burlywood;
+}
+
+.content-map-left-text {
+  margin-top: 10px;
+}
+
+.kobietdattenmegi {
+  font-size: 13px;
+  color: whitesmoke;
+  vertical-align: auto;
+}
+
+.kobietdattenmegi:nth-child(2) {
+  font-size: 11px;
+  padding-bottom: 7px;
+}
+
+.kobietdattenmegi a {
+  color: #95c3e7;
+}
+
+.content-map-right {
+  display: flex;
+  font-size: 25px;
+  color: whitesmoke;
+  padding: 20px;
+}
+
+.map {
+  width: 100%;
+  height: auto;
+}
+
+.map img {
+  width: 100%;
+}
+
+/* middle sau cai map */
+
+.middle {
+  width: 1150px;
+  margin: auto;
+}
+
+.middle h4 {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.contact {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-item {
+  margin: 7px;
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+.introduce {
+  margin: 20px 0px 0px 0px;
+}
+
+.introduce-item {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  gap: 10px;
+  margin: 15px 0px 15px 0px;
+}
+
+.introduce-item i {
+  color: rgb(1, 82, 1);
+  font-size: 16px;
+}
+
+.middle-line {
+  height: 30px;
+  width: 100%;
+}
+
+.shops p {
+  text-align: center;
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 8px;
+}
+
+.shops p:nth-child(2) {
+  margin-top: 10px;
+}
+
+.shops-item {
+  width: 1150px;
+  margin: auto;
+}
+
+.shops-item img {
+  width: 100%;
+}
+
+.send-contact-infor {
+  width: 100%;
+}
+
+.send-contact-infor h2 {
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 7px 0px 30px 0px;
+}
+
+.send-contact-infor-item {
+  display: flex;
+  gap: 10px;
+}
+
+.send-contact-infor-item input {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-weight: 600;
+  color: #003031;
+  outline: none;
+  border: 1px solid #e1e1e1;
+  margin: 5px 0px 5px 0px;
+}
+
+fieldset {
+  outline: none;
+  border: none;
+  max-width: 100%;
+}
+
+textarea {
+  outline: none;
+  border: 1px solid #e1e1e1;
+  padding: 5px 0px 0px 10px;
+}
+
+.send-contact-infor button {
+  width: 140px;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  background-color: #fab685;
+  border-radius: 4px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.send-contact-infor button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
