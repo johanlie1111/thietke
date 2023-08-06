@@ -17,8 +17,7 @@
 
 .title {
   display: flex;
-  width: 1350px;
-  justify-content: center;
+  margin-left: 350px;
   margin-top: 20px;
   align-items: center;
   margin-bottom: 20px;
